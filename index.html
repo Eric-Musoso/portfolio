@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lato:wght@300&family=Poppins&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    <!-- Main Header and Navigation -->
+    <header>
+
+         <!-- Menu Icon for Mobile -->
+         <div id="menu-icon" class="d-block d-md-none">
+            <i class="bx bx-menu" style="font-size: 24px; cursor: pointer;"></i>
+        </div>
+        <h2 class="logo">Portf<span>olio</span></h2>
+
+         <!-- Navbar (Hidden on mobile, visible on larger screens) -->
+        <ul class="navbar d-none d-md-flex">
+            <li><a href="#home" onclick="hideSubNavbar()">Home</a></li>
+            <li><a href="#about" onclick="showSubNavbar()">About</a></li>
+            <li><a href="#experience" onclick="hideSubNavbar()">Experience</a></li>
+            <li><a href="#skills" onclick="hideSubNavbar()">Skills</a></li>
+            <li><a href="#portfolio" onclick="hideSubNavbar()">Projects</a></li>
+            <li><a href="#contact" onclick="hideSubNavbar()">Contact</a></li>
+        </ul>
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <select id="language-select" aria-label="Language Switcher">
+                <option value="en" selected>English</option>
+                <option value="de">German</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+    </header>
+    <!-- Mobile Navbar (Visible only on small screens) -->
+    <div id="mobile-nav" class="d-md-none" style="display: none;">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Secondary Sub-Navigation (Initially Hidden) -->
+    <div class="sub-navbar" id="sub-navbar">
+        <a href="#programming">Programming Skills</a>
+        <a href="#achievement">Achievements</a>
+    </div>
+    <!---home--->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h4>Hello</h4>
+            <h1>I'm <br> <span>Eric Musonera</span></h1>
+            <h3>Geospatial Software Developer and Data Analytics & Visualization Enthusiast</h3>
+            <a href="https://github.com/Eric-Musoso/portfolio/blob/main/Resume.pdf" class="btn" target="_blank">Download Resume</a>
+        </div>
+    </section>
+
+    <!---about--->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="D:/Munster/ThirdSemester/Mystuff/test/images/about/1.png">
+        </div>
+
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h4>My name is Eric Musonera</h4>
+            <p>I'm a passionate Geospatial Technologies final year MSc student with hands-on experience in GIS development, data visualization, and spatial analysis. I am Esri Technical Certified in ArcGIS Pro and with a background in Urban Planning, I specialize in transforming geospatial data into actionable insights to drive innovation and solve real-world problems.</p>
+            <p>Currently pursuing my studies under the Erasmus Mundus program, I’m focused on leveraging Python, SQL, ArcGIS, R and JavaScript to contribute to data-driven solutions Through:
+
+            </p>
+            <div class="about-gri">
+                <div class="about-in">
+                    <h5>1. Analytical skills</h5>
+                </div>
+
+                <div class="about-in">
+                    <h5>2. Data Management</h5>
+                </div>
+
+                <div class="about-in">
+                    <h5>3. Data visualization &  interface Devolopment</h5>
+                </div>
+
+            </div>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section class="programming" id="programming">
+    <!-- Technical Languages -->
+    <div class="inner">
+        <div class="Tech_header">
+            <h1>Languages</h1>
+        </div>
+        <div class="Tcontainer">
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="tech_img">
+                        <img class="skill-icon" src="D:/Munster/ThirdSemester/Mystuff/test/images/Language/1.png" alt="Python Programming Language">
+                    </div>
+                    <h3>Python</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="tech_img">
+                        <img class="skill-icon" src="D:/Munster/ThirdSemester/Mystuff/test/images/Language/2.png" alt="SQL Programming Language">
+                    </div>
+                    <h3>SQL</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="tech_img">
+                        <img class="skill-icon" src="D:/Munster/ThirdSemester/Mystuff/test/images/Language/3.png" alt="R">
+                    </div>
+                    <h3>R</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="tech_img">
+                        <img class="skill-icon" src="D:/Munster/ThirdSemester/Mystuff/test/images/Language/4.png" alt="Hml">
+                    </div>
+                    <h3>Html</h3>
+                </div>
+            </div>
+        <div class="skill-box">
+            <div class="skill-title">
+                  <div class="tech_img">
+                    <img class="skill-icon" src="D:/Munster/ThirdSemester/Mystuff/test/images/Language/5.png" alt="Css">
+                  </div>
+                  <h3>Css</h3>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="tech_img">
+                        <img class="skill-icon" src="D:/Munster/ThirdSemester/Mystuff/test/images/Language/6.png" alt="Javascript">
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+     
+    <!-- -Experience- -->
+    <section class="experience" id="experience">
+        <div class="main-text">
+            <h2> <span>My Experiencess</span></h2>
+        </div>
+        <br>
+        <div class="experience-content">
+            <div class="box">
+                <img src="D:/Munster/ThirdSemester/Mystuff/test/images/Language/7.png" >
+                <h3>Esri Rwanda ltd</h3>
+
+                <h4>GIS Specialist >>
+                    <span>
+                        2020-2023
+                    </span>
+                </h4>
+                <br>
+                <p>I have three years of experience in the Geospatial Information (GI) field, having worked as a GIS Specialist at Esri Rwanda. Esri Rwanda is the official and exclusive distributor of Esri Inc. products and services across Rwanda, Burundi, and the Republic of Congo.</p>
+                <br>
+                <h4><span>Main Tasks</span></h4>
+                <p>
+                    • Managing PostgreSQL relational databases for geospatial data,
+                    integrating them with cloud-hosted PostGIS databases, and
+                    seamlessly connecting these with ArcGIS Online/Enterprise
+                    environments.
+                    <br>
+                    • Working on different company projects, which involve
+                    preparing, cleaning, processing geospatial data, and analyzing
+                    both spatial and non-spatial informations.
+                    <br>
+                    • Facilita ng data collec on, interpretation, and visualization
+                    through development and configuration of fields data apps, Dashboards, web maps, apps, and mobile
+                    application.
+                    <br>
+                    • Give training Esri Rwanda customers how to use Esri solutions to solve
+                    various geospatial problems.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- -Skills- -->
+    <section class="skills" id="skills">
+        <div class="main-text">
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skills-content">
+            <div class="box">
+                <img src="D:/Munster/ThirdSemester/Mystuff/test/images/skills/7.png">
+                <h3>Geospatial Information Technology</h3>
+                <p>
+                    I specialize in solving real-world spatial problems using both Esri-based technologies and open-source tools. My expertise lies in leveraging geospatial analysis to craft effective and innovative solutions tailored to real-world challenges.
+                </p>
+            </div>
+            <div class="box">
+                <img src="D:/Munster/ThirdSemester/Mystuff/test/images/skills/6.png">
+                <h3>Database Systems</h3>
+                <p>
+                    With a strong foundation in database systems, I design and manage robust, scalable data architectures that support efficient data storage, retrieval, and analysis, empowering insights across diverse applications.
+                </p>
+            </div>
+            <div class="box">
+                <img src="D:/Munster/ThirdSemester/Mystuff/test/images/skills/5.png">
+                <h3>Web App Development</h3>
+                <p>
+                    I bridge front-end and back-end technologies to create seamless, user-friendly web applications. Using tools like Python, HTML, CSS, JavaScript, Dash, and jQuery, I develop interactive dashboards that transform data into actionable insights.
+                </p>
+            </div>
+            <div class="box">
+                <img src="D:/Munster/ThirdSemester/Mystuff/test/images/skills/2.jpg">
+                <h3>Machine Learning</h3>
+                <p>
+                    I harness the power of machine learning to automate insights and decision-making. By applying advanced algorithms and pattern recognition techniques, I enable intelligent systems to solve complex problems and deliver data-driven results.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- -Achievements- -->
+    <section class="achievement" id="achievement">
+        <div class="main-text">
+            <h4>Some of My Major Achievements</h4>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="D:/Munster/ThirdSemester/Mystuff/test/images/achievement/pro.png">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5> <span>I am Esri Technical Certified</span></h5>
+                    </div>
+                </div>
+                <p>On May 30, 2022, I was awarded the ArcGIS Pro 2101 certification after successfully passing the Esri technical exam. This rigorous exam is designed to evaluate the skills and expertise of GIS professionals in solving complex geospatial problems With ArcGIS Solutions. </p>
+                <div class="main-row">
+                    <div class="card-footer small-buttons">
+                        <a href="https://www.credly.com/badges/f42b514b-0789-4a60-9940-2f26a565f278" class="btn btn-primary">Verify it</a>
+                        <a href="https://www.esri.com/training/assets/courses/611c203a6db91a4360495f74/EAPA2101_V9.20231129.pdf" class="btn btn-secondary">More about exam</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="D:/Munster/ThirdSemester/Mystuff/test/images/achievement/geomundus.png">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5> <span>Erasmus Mundus Scholarship Winner</span></h5>
+                    </div>
+                </div>
+                <p>On March 15, 2023, I was awarded the prestigious Erasmus Mundus Scholarship to pursue a Master’s in Geospatial Technologies. This program takes place across three European universities: the University of Münster in Germany, Jaume I University in Spain, and NOVA University in Portugal.</p>
+                <div class="main-row">
+                    <div class="card-footer small-buttons">
+                        <a href="https://mastergeotech.info/" class="btn btn-primary">Verify learn more here</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    
+
+    <!-- -portfolio- -->
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2>My Projects</h2>
+            <h5>Some Of My Pinned Projects <span>(Click Image to explore)</span></h5>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="row">
+                <a href="https://uni-ms.maps.arcgis.com/apps/dashboards/8fd9b0b5fcf24aa7adc929bc447a6ab7" target="_blank">
+                    <img src="D:/Munster/ThirdSemester/Mystuff/test/images/projects/1.png">
+                </a>
+                    <div class="main-row">
+                    <div class="row-text">
+                        <h5> <span>Change Detection & Monitoring Dashboard</span></h5>
+                    </div>
+                   </div>
+                <p>This interactive dashboard showcases the impact of urbanization on existing land cover in the city of Kigali from 2017 to 2023, using Esri land use and land cover classified images.</p>
+                <div class="main-row">
+                    <div class="card-footer small-buttons">
+                        <a href="https://www.postgresql.org/" class="btn btn-primary">PostgreSQL</a>
+                        <a href="https://postgis.net/" class="btn btn-secondary">PostGIS</a>
+                        <a href="https://www.esriuk.com/en-gb/arcgis/products/arcgis-pro/overview" class="btn btn-secondary">ArcGIS Pro</a>
+                        <a href="https://www.esri.com/en-us/arcgis/products/arcgis-online/overview" class="btn btn-secondary">ArcGIS Online</a>
+                        <a href="https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/overview" class="btn btn-secondary">ArcGIS Dashboard</a>
+                        <a href="https://www.esri.com/en-us/arcgis/products/arcgis-experience-builder/overview" class="btn btn-secondary">Experience Builder</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <a href="https://uni-ms.maps.arcgis.com/apps/dashboards/aaa23c457c2e44aa9a88269d794ac56d" target="_blank">
+                    <img src="D:/Munster/ThirdSemester/Mystuff/test/images/projects/2.png">
+                </a>
+                    <div class="main-row">
+                    <div class="row-text">
+                        <h5><span>Migrants & Refugees Status Across EU Countries</span></h5>
+                    </div>
+                </div>
+                <p>This project explores refugee and migrant movements across European Union countries in detail, using data obtained from the UNHCR portal, covering the period from 2015 to 2023.</p>
+                <div class="main-row">
+                    <div class="card-footer small-buttons">
+                        <a href="https://www.postgresql.org/" class="btn btn-primary">PostgreSQL</a>
+                        <a href="https://postgis.net/" class="btn btn-secondary">PostGIS</a>
+                        <a href="https://www.esriuk.com/en-gb/arcgis/products/arcgis-pro/overview" class="btn btn-secondary">ArcGIS Pro</a>
+                        <a href="https://www.esri.com/en-us/arcgis/products/arcgis-online/overview" class="btn btn-secondary">ArcGIS Online</a>
+                        <a href="https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/overview" class="btn btn-secondary">ArcGIS Dashboard</a>
+                        <a href="https://www.esri.com/en-us/arcgis/products/arcgis-insights/overview" class="btn btn-secondary">ArcGIS insights</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="row">
+                <a href="https://github.com/Eric-Musoso/Evolving-Renewable-Energy-in-Europe/blob/main/Final_Project.ipynb" target="_blank">
+                    <img src="D:/Munster/ThirdSemester/Mystuff/test/images/projects/3.jpg">
+                </a>
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5> <span>Energy Distribution & Financial Investment Analysis</span></h5>
+                    </div>
+                </div>
+                <p>This project analyzes energy distribution patterns and the financial investments required for sustainable energy infrastructure. It highlights regional disparities and investment trends to inform strategies for a balanced and resilient energy sector.</p>
+                <div class="main-row">
+                    <div class="card-footer small-buttons">
+                        <a href="https://jupyter.org/" class="btn btn-primary">jupyter Notebook</a>
+                        <a href="https://geopandas.org/en/stable/about.html" class="btn btn-secondary">Geopandas</a>
+                        <a href="https://pandas.pydata.org/about/" class="btn btn-secondary">Pandas</a>
+                        <a href="https://python-visualization.github.io/folium/latest/getting_started.html" class="btn btn-secondary">Folium</a>
+                        <a href="https://seaborn.pydata.org/" class="btn btn-secondary">Seaborn</a>
+                        <a href="https://matplotlib.org/stable/tutorials/pyplot.html" class="btn btn-secondary">matplotlib</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <a href="https://github.com/Eric-Musoso/Hydrological_Modelling" target="_blank">
+                    <img src="D:/Munster/ThirdSemester/Mystuff/test/images/projects/3.png">
+                </a>
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5><span>Hydrological Modelling R Package</span></h5>
+                    </div>
+                </div>
+                <p>The hydroModelling package facilitates hydrological data analysis and visualization for studying water flow and distribution. It enables users to load, process, and visualize Digital Elevation Model (DEM) data as a foundation for hydrological modeling. Key features include tools for flow accumulation and watershed delineation.</p>
+                <div class="main-row">
+                    <div class="card-footer small-buttons">
+                        <a href="https://rstudio-education.github.io/hopr/starting.html" class="btn btn-primary">R Studio</a>
+                        <a href="https://rmarkdown.rstudio.com/" class="btn btn-secondary">R markdown</a>
+                        <a href="https://r-pkgs.org/vignettes.html" class="btn btn-secondary">vignette</a>
+                        <a href="https://r-spatial.github.io/sf/" class="btn btn-secondary">sf</a>
+                        <a href="https://rspatial.org/pkg/" class="btn btn-secondary">terra</a>
+                        <a href="https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html" class="btn btn-secondary">tmap</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <a href="https://rwanda-pop-insight-dashboard.onrender.com/" target="_blank">
+                    <img src="D:/Munster/ThirdSemester/Mystuff/test/images/projects/2.jpg">
+                </a>
+                <div class="main-row">
+                    <div class="row-text">
+                        <h5> <span>Population Distribution Insight Dashboard</span></h5>
+                    </div>
+                </div>
+                <p>This dashboard presents the current population status of Rwanda, detailing the number of males and females. It provides insights into the country's rapid population growth by examining significant increases recorded over each ten-year period. Rwanda's first census took place in 2000, and the data for this analysis was sourced from the Rwanda National Statistics Portal.</p>
+                <div class="main-row">
+                    <div class="card-footer small-buttons">
+                        <a href="https://dash.plotly.com/" class="btn btn-primary"> dash</a>
+                        <a href="https://html.com/" class="btn btn-secondary">html</a>
+                        <a href="https://geopandas.org/en/stable/about.html" class="btn btn-secondary">geopandas</a>
+                        <a href="https://plotly.com/" class="btn btn-secondary">plotly</a>
+                        <a href="https://render.com/" class="btn btn-secondary">Deployed on render</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -contact- -->
+<section class="contact" id="contact">
+    <div class="contact-text">
+        <h3>Contact Me</h3>
+        <br>
+        <div class="contact-list">
+            <ul>
+                <li>
+                    <a href="mailto:ericmusoso1@gmail.com" class="text-white">
+                        <img src="D:/Munster/ThirdSemester/Mystuff/test/icons/email.png" alt="Email Icon" class="social-icon">
+                        ericmusoso1@gmail.com
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+4915773730059" class="text-white">
+                        <img src="D:/Munster/ThirdSemester/Mystuff/test/icons/phone.png" alt="Phone Icon" class="social-icon">
+                        +4915773730059
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/eric-musonera-40016b198/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://x.com/ericmusoso1" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://github.com/Eric-Musoso" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a title="+4915773730059"><i class='bx bxl-whatsapp' ></i></a>
+        </div>
+    </div>
+</section>
+
+
+     <!---scroll-top--->
+     <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+
+    <!-- ScrollReveal and Bootstrap JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+5qWROXIVw4QJpIcALe7x9LLu8j7W" crossorigin="anonymous"></script>
+
+</body>
+</html>
